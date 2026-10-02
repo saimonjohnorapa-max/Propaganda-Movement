@@ -1,0 +1,6 @@
+{
+  "name": "La Solidaridad: Rizal & The Propaganda Movement",
+  "description": "An interactive historical archive, 19th-century broadsheet exhibition, and chronicle of Dr. José Rizal, Marcelo H. del Pilar, and the Filipino Ilustrado campaign for peaceful reform.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

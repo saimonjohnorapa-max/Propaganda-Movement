@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-cinzel: 'Cinzel', serif;
+    --font-cormorant: 'Cormorant Garamond', Georgia, serif;
+    --font-newsreader: 'Newsreader', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+.font-cinzel {
+  font-family: var(--font-cinzel);
+}
+
+.font-editorial {
+  font-family: var(--font-cormorant);
+}
+
+.font-prose {
+  font-family: var(--font-newsreader);
+}
+
+/* 19th-century newspaper broadsheet print column rules */
+.newspaper-cols-2 {
+  column-count: 1;
+}
+@media (min-width: 768px) {
+  .newspaper-cols-2 {
+    column-count: 2;
+    column-gap: 2.5rem;
+    column-rule: 1px solid rgba(120, 113, 108, 0.25);
+  }
+}
+
+.newspaper-cols-3 {
+  column-count: 1;
+}
+@media (min-width: 768px) {
+  .newspaper-cols-3 {
+    column-count: 2;
+    column-gap: 2rem;
+    column-rule: 1px solid rgba(120, 113, 108, 0.25);
+  }
+}
+@media (min-width: 1024px) {
+  .newspaper-cols-3 {
+    column-count: 3;
+    column-gap: 2.5rem;
+    column-rule: 1px solid rgba(120, 113, 108, 0.25);
+  }
+}
+
+.drop-cap::first-letter {
+  float: left;
+  font-family: var(--font-cinzel);
+  font-size: 3.5rem;
+  line-height: 0.8;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-bottom: 2px;
+  color: #7c2d12;
+  font-weight: 700;
+}
